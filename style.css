@@ -1,19 +1,55 @@
-body {
-            font-family: 'Fira Mono', sans-serif;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-        }
-        .header {
-            background-color: #f8f8f8;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-        }
-        .content {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #f0f0f0;
-            border-radius: 10px;
-        }
+body{
+color: var(--tg-theme-text-color);
+background: var(--tg-theme-bg-color);
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 18px;
+ font-family: 'Inter';
+}
+
+.hint{
+color: var(--tg-theme-hint-color);
+}
+
+.link{
+color: var(--tg-theme-link-color);
+}
+
+#sendDataButton {
+background: var(--tg-theme-button-color);
+color: var(--tg-theme-button-text-color);
+border: none;
+font-size: 18px;
+border-radius: 10px; /* Для закругления углов */
+width: 250px; /* Задайте ширину по вашему усмотрению */
+height: 50px; /* Задайте высоту по вашему усмотрению */
+position: fixed; /* Фиксированная позиция */
+bottom: 20px; /* Отступ от нижней части сайта */
+left: 50%; /* Горизонтальное выравнивание по центру */
+transform: translateX(-50%); /* Центрирование по горизонтали */
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+ font-family: 'Inter';
+}
+
+a.button {
+position: relative;
+overflow: hidden;
+z-index: 1;
+}
+
+.btn span {
+position: absolute;
+height: 12px;
+width: 12px;
+border-radius: 100%;
+background: #FFFFFF;
+}
+
+div.header {
+margin-left: 5%;
+margin-right:5%; 
+}
